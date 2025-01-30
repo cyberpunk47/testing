@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border: 5px solid black;
+            display: flex;
+            min-height: 600px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            /* align-items: center; */
+            column-gap: 5px;
+            row-gap: 20px;
+            flex-shrink: 0;
+        }
+        .item{
+            background-color: crimson;
+            width: 60px;
+            height: 60px;
+            /* padding: 20px; */
+            /* margin: 20px; */
+            border: 5px solid skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-shrink: 1; */
+            /* flex-grow: 1; */
+        }
+        #i1{
+            /* display: flex;
+            /* flex-grow: 5; */
+            /* flex-shrink: 5; */
+            /* align-self: flex-end; */
+            /* margin-right: auto; */ 
+        }
+        @media screen and (max-width: 500px){
+            .container{
+                /* flex-direction: column; */
+                flex-wrap: wrap;
+                background: azure;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+</body>
+</html>

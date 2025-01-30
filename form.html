@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <!-- default method get  size limitation 3000, secure method is post -->
+        <label for="uname">Enter Name:-</label>
+        <input type="text" name="uname" id="uname" size="30" maxlength="5"
+        placeholder="Enter Your Name" required>
+        <br>
+        <br>
+        <label for="pass">Enter Your Passoword:-</label>
+        <input type="password" id="pass" name="pass" placeholder="Enter Passoword" required autocomplete="on">
+        <br>
+        <br>
+        <label for="email">Enter Email:-</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email" required>
+        <br>
+        <br>
+        <label for="review">Write a review</label>
+        <textarea name="review" id="review" rows="10" cols="40"></textarea>
+        <br><br>
+        <label for="hobby">Choose your hobby: </label>
+        <input type="checkbox" name="hobby" id="hobby" value="reading" checked>Reading
+        <input type="checkbox" name="hobby" id="hobby" value="writing">Writing
+        <input type="checkbox" name="hobby" id="hobby" value="coding">Coding
+        <input type="checkbox" name="hobby" id="hobby" value="singing">Singing
+        <br><br>
+
+
+        <label for="gender">Gender:- </label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+
+
+        <label for="state">Select State: </label>
+        <select name="state" id="state" required>
+            <option value="choose">Choose Your State</option>
+            <option value="hp">Himachal Pradesh</option>
+            <option value="pb">Punjab</option>
+            <option value="hr">Haryana</option>
+            <option value="jk">Jammu & Kashmir</option>
+            <option value="uk">Uttarakhand</option>
+            <option value="br">Bihar</option>
+        </select>
+        <br><br>
+        <label for="files">Upload Your File</label>
+        <input type="file" name="files" id="files" reset required image/*>
+        <br><br>
+        <input type="submit" name="submitform" value="Submit form" id="submit">
+        <input type="reset" id="reset" name="reset" value="Reset Form">
+
+            <input type="image" name="subimg" id="subimg" src="">
+        </form>
+
+</body>
+</html>
